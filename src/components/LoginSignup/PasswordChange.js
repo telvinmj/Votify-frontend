@@ -16,7 +16,7 @@ const Change = () => {
         console.log(email);
         console.log(prev_password);
         console.log(new_password);
-        const response = await axios.post("http://localhost:3001/password_change", {
+        const response = await axios.post("https://backkk-2mdt.onrender.com/3001/password_change", {
         email,
         prev_password,
         new_password

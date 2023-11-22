@@ -32,7 +32,7 @@ useEffect(() => {
 }, [])
 
   const handleSubmit = () => {
-    axios.post("http://localhost:3001/vote",vote_id)
+    axios.post("https://backkk-2mdt.onrender.com/3001/vote",vote_id)
     .then(result=>{console.log(result)})
     .catch(err=>console.log(err));
     // console.log('Form submitted!');

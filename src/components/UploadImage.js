@@ -25,7 +25,7 @@ export default function UploadImage() {
   function uploadSingleImage(base64) {
     setLoading(true);
     axios
-      .post("http://localhost:3001/uploadImage", { image: base64 })
+      .post("https://backkk-2mdt.onrender.com/3001/uploadImage", { image: base64 })
       .then((res) => {
         setUrl(res.data);
         alert("Image uploaded Succesfully");
@@ -37,7 +37,7 @@ export default function UploadImage() {
   function uploadMultipleImages(images) {
     setLoading(true);
     axios
-      .post("http://localhost:3001/uploadMultipleImages", { images })
+      .post("https://backkk-2mdt.onrender.com/3001/uploadMultipleImages", { images })
       .then((res) => {
         setUrl(res.data);
         alert("Image uploaded Succesfully");

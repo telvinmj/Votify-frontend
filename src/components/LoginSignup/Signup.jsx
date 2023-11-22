@@ -13,7 +13,7 @@ const Signup = () => {
   const [password,setPassword]=useState("");
   // const submitsignup=()=>{
   //   console.log(name,email,password);
-  //   axios.post("http://localhost:3001/signup",{name,email,password})
+  //   axios.post("https://backkk-2mdt.onrender.com/3001/signup",{name,email,password})
   //   .then(result=>console.log(result))
   //   .then(navigate("/login"))
   //   .catch(err=>console.log(err))
@@ -21,7 +21,7 @@ const Signup = () => {
   const submitsignup = () => {
     console.log(name, email, password);
     axios
-      .post("http://localhost:3001/signup", { name, email, password })
+      .post("https://backkk-2mdt.onrender.com/3001/signup", { name, email, password })
       .then((result) => {
         console.log(result);
         // Check if the response contains a message indicating an existing account

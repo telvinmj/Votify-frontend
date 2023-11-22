@@ -122,7 +122,7 @@ const PollHistory = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get("http://localhost:3001/partpolls")
+    axios.get("https://backkk-2mdt.onrender.com/3001/partpolls")
       .then(res => {
         //console.log('Full response:', res.data);
   
