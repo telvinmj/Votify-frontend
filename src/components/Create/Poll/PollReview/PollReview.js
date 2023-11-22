@@ -41,7 +41,7 @@ const VotingReview = () => {
   // };
 
   const handleSubmit = () => {
-    axios.post("https://backkk-2mdt.onrender.com/3001/polls",poll_id)
+    axios.post("https://backkk-2mdt.onrender.com/polls",poll_id)
     .then(result=>console.log(result))
     .catch(err=>console.log(err));
     // console.log('Form submitted!');

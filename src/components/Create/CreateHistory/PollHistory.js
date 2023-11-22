@@ -119,7 +119,7 @@ const DessertTable = () => {
   useEffect(() => {
     const getUser = async () => {
       try {
-        const response = await axios.get('https://backkk-2mdt.onrender.com/3001/getuser');
+        const response = await axios.get('https://backkk-2mdt.onrender.com/getuser');
   
         if (response.status === 200) {
           setUser(response.data.user.email);
@@ -139,7 +139,7 @@ const DessertTable = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); 
   useEffect(() => {
-    axios.get("https://backkk-2mdt.onrender.com/3001/polls")
+    axios.get("https://backkk-2mdt.onrender.com/polls")
       .then((res) => {
         setDesserts(res.data);
       })
@@ -217,7 +217,7 @@ const DessertTable = () => {
 
   const handleDelete = (id) => {
     console.log(id);
-    axios.delete(`https://backkk-2mdt.onrender.com/3001/polls/${id}`)
+    axios.delete(`https://backkk-2mdt.onrender.com/polls/${id}`)
       .then((res) => {
         console.log(res);
         window.location.reload();

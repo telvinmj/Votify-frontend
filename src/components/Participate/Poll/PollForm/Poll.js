@@ -23,7 +23,7 @@
 //   ])
 //   let  userId  = useParams();
 //   console.log(userId.id)
-//   axios.get("https://backkk-2mdt.onrender.com/3001/polls/"+userId.id)
+//   axios.get("https://backkk-2mdt.onrender.com/polls/"+userId.id)
 //   .then(res=>{console.log(res.data.questions);setPollData(res.data.questions)})
 //   .catch(err=>{console.log(err)})
 
@@ -224,7 +224,7 @@ export default function Poll() {
 
   useEffect(() => {
     axios
-      .get(`https://backkk-2mdt.onrender.com/3001/polls/${id}`)
+      .get(`https://backkk-2mdt.onrender.com/polls/${id}`)
       .then((res) => {
         console.log(res.data);
         setPollData(res.data.questions);
@@ -239,7 +239,7 @@ export default function Poll() {
     setData((prevId)=>({...prevId,questions:pollData}))
     console.log("final")
     console.log("data",Data)
-    axios.put(`https://backkk-2mdt.onrender.com/3001/polls/${id}`,{Data})
+    axios.put(`https://backkk-2mdt.onrender.com/polls/${id}`,{Data})
     .then(res=>{console.log(res)})
     .catch(err=>{console.log(err)})
     navigate(`/pollresults/${id}`);

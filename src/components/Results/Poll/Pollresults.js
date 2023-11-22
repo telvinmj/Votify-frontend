@@ -27,7 +27,7 @@
 //   ])
 //   useEffect(() => {
 //     axios
-//       .get(`https://backkk-2mdt.onrender.com/3001/polls/${id}`)
+//       .get(`https://backkk-2mdt.onrender.com/polls/${id}`)
 //       .then((res) => {
 //         console.log(res.data);
 //         setpolldata(res.data.questions);
@@ -113,7 +113,7 @@ const ResultsPage = () => {
 
   useEffect(() => {
     axios
-      .get(`https://backkk-2mdt.onrender.com/3001/polls/${id}`)
+      .get(`https://backkk-2mdt.onrender.com/polls/${id}`)
       .then((res) => {
         console.log(res.data);
         setPollData(res.data.questions);

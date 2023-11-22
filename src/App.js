@@ -40,7 +40,7 @@ function App() {
   useEffect(() => {
     const getUser = async () => {
       try {
-        const response = await axios.get('https://backkk-2mdt.onrender.com/3001/getuser');
+        const response = await axios.get('https://backkk-2mdt.onrender.com/getuser');
   
         if (response.status === 200) {
           setUser(response.data.user.email);

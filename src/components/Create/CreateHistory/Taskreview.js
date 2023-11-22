@@ -13,7 +13,7 @@ const PollDetailsView = () => {
   useEffect(() => {
     // setViewid(id);
 
-    axios.get(`https://backkk-2mdt.onrender.com/3001/polls/${id}`)
+    axios.get(`https://backkk-2mdt.onrender.com/polls/${id}`)
       .then((response) => {
         setPoll(response.data);
         console.log(response.data)
