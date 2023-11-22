@@ -1,0 +1,24 @@
+
+[
+    {
+        "id":1,
+        "name":"Mahatma Gandhi",
+        "imag":""
+        
+    },
+    {
+        "id":2,
+        "name":"Mamta",
+        "imag":""
+    },
+    {
+        "id":1,
+        "name":"Narendra Modi",
+        "imag":""
+    },
+    {
+        "id":1,
+        "name":"Rahul Gandhi",
+        "imag":""   
+    }
+]
